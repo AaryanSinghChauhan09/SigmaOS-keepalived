@@ -1,0 +1,10 @@
+[package]
+name = "SigmaOS-keepalived"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "SigmaOS keepalived component - cloud"
+
+[lib]
+name = "keepalived"
+path = "src/lib.rs"
