@@ -3,7 +3,7 @@ name = "SigmaOS-keepalived"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "keepalived component"
+description = "Keepalived"
 upstream = []
 
 [contract]
