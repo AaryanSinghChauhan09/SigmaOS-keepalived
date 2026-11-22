@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-keepalived Component Wiki
+# SigmaOS-keepalived Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-keepalived provides Keepalived for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-keepalived provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-keepalived Abstraction
-- Fail-Fast on SigmaOS-keepalived Initialization Errors
-- Deterministic SigmaOS-keepalived Setup
-- Clear Abstraction Over SigmaOS-keepalived APIs
-- Composition over Inheritance for SigmaOS-keepalived extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-keepalived Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-keepalived Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-keepalived Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-keepalived APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-keepalived extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-keepalived follows a SigmaOS-keepalived pattern:
+SigmaOS-keepalived follows a SigmaOS-keepalived pattern:
 - **SigmaOS-keepalived Core**: Provides SigmaOS-keepalived support, SigmaOS-keepalived management, and SigmaOS-keepalived tracking
 - **Management**: Supports SigmaOS-keepalived management, SigmaOS-keepalived configuration, and SigmaOS-keepalived lifecycle
 - **Tracking**: Supports SigmaOS-keepalived status, SigmaOS-keepalived tracking, and SigmaOS-keepalived lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-keepalived follows a SigmaOS-keepalived pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-keepalived by given configuration
--  - Register a SigmaOS-keepalived by given name
--  - Get SigmaOS-keepalived status and SigmaOS-keepalived availability
--  - Track SigmaOS-keepalived management and SigmaOS-keepalived tracking
+- Manage a SigmaOS-keepalived by given configuration
+- Register a SigmaOS-keepalived by given name
+- Get SigmaOS-keepalived status and SigmaOS-keepalived availability
+- Track SigmaOS-keepalived management and SigmaOS-keepalived tracking
 - Error types for SigmaOS-keepalived failure scenarios or unsupported SigmaOS-keepalived types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-keepalived init, SigmaOS-keepalived management)
 3. **Assert**: Verify the expected SigmaOS-keepalived results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-keepalived initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-keepalived failure scenarios
 - Unit tests provided for SigmaOS-keepalived management and configuration
